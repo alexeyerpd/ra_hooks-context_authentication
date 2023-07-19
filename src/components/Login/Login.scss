@@ -1,0 +1,40 @@
+@use 'styles/variables';
+
+$block: '.#{variables.$ns}login';
+
+#{$block} {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 8px;
+
+    &__input {
+        padding: 12px;
+
+        font: inherit;
+
+        border: 1px solid #e8ebee;
+        border-radius: 4px;
+
+        outline: none;
+
+        &::placeholder {
+            font: inherit;
+            color: #9796a7;
+        }
+    }
+
+    &__btn {
+        padding: 12px;
+
+        font: inherit;
+
+        color: #62b978;
+
+        border: 1px solid #62b978;
+        border-radius: 4px;
+
+        background: none;
+
+        cursor: pointer;
+    }
+}

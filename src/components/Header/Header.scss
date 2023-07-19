@@ -1,0 +1,17 @@
+@use 'styles/variables';
+
+$block: '.#{variables.$ns}header';
+
+#{$block} {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 30px 10px;
+
+    background-color: #f8f9fa;
+
+    &__head {
+        font-size: 20px;
+        font-weight: 400;
+    }
+}

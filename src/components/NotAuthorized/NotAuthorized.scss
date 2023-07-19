@@ -1,0 +1,23 @@
+@use 'styles/variables';
+
+$block: '.#{variables.$ns}notauthorized';
+
+#{$block} {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 260px;
+    padding: 30px;
+
+    background-color: #e8ebee;
+
+    border-radius: 4px;
+
+    &__title {
+        font-size: 42px;
+    }
+
+    &__text {
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,38 @@
+@use 'styles/variables';
+
+$block: '.#{variables.$ns}profile';
+
+#{$block} {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 8px;
+
+    &__username {
+        font-size: 18px;
+    }
+
+    &__img {
+        display: block;
+        width: 44px;
+
+        border-radius: 50%;
+
+        object-fit: cover;
+    }
+
+    &__btn {
+        padding: 12px;
+
+        font: inherit;
+
+        color: #e56a70;
+
+        border: 1px solid #e56a70;
+        border-radius: 4px;
+
+        background: none;
+
+        cursor: pointer;
+    }
+}
